@@ -9,9 +9,9 @@
 
 &binary_controls
          
-   m1 = 15d0  ! donor mass in Msun
-   m2 = 10d0 ! companion mass in Msun
-   initial_period_in_days = 100d0
+   m1 = 15.0d0  ! donor mass in Msun
+   m2 = 10.0d0 ! companion mass in Msun
+   initial_period_in_days = 50d0
 
    !transfer efficiency controls
    limit_retention_by_mdot_edd = .true.
