@@ -11,10 +11,10 @@
          
    m1 = 15.0d0  ! donor mass in Msun
    m2 = 10.0d0 ! companion mass in Msun
-   initial_period_in_days = 50d0
+   initial_period_in_days = 20d0
 
    !transfer efficiency controls
-   limit_retention_by_mdot_edd = .true.
+   limit_retention_by_mdot_edd = .false.
 
    max_tries_to_achieve = 20
          
