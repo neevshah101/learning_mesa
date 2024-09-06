@@ -54,9 +54,8 @@ History_Panels1_yaxis_name(1) = 'period_days'
 History_Panels1_other_yaxis_name(1) = 'binary_separation'
 History_Panels1_yaxis_name(2) = 'lg_mstar_dot_1'
 History_Panels1_other_yaxis_name(2) = 'lg_mstar_dot_2'
-History_Panels1_yaxis_name(2) = 'star_1_mass'
-History_Panels1_other_yaxis_name(2) = 'star_2_mass'
-
+History_Panels1_yaxis_name(3) = 'star_1_mass'
+History_Panels1_other_yaxis_name(3) = 'star_2_mass'
 
 
 History_Track1_win_flag = .true.
