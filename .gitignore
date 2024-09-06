@@ -1,0 +1,8 @@
+logs*
+LOGS*
+*.data
+*.npy
+*.a
+*.o
+*.mod
+*.smod
