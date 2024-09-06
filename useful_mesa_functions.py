@@ -69,7 +69,7 @@ def get_profiles(logs_dir):
     return [load_profile(logs_dir, profile_number) 
             for profile_number in index.profile_number]
 
-def plot_composition(logs_dir, profile_number):
+def plot_composition(logs_dir, profile_number, xaxis = 'radius'):
 
     profs = get_profiles(logs_dir)
 
@@ -88,4 +88,4 @@ def plot_composition(logs_dir, profile_number):
     plt.ylabel(r'mass fraction')
     plt.legend()
     plt.title('Internal Composition', size=15)
-    plt.show()
+    # plt.show()
