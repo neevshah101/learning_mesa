@@ -1,6 +1,7 @@
 logs*
-LOGS*
+LOGS*/*
 *.data
+*.index
 *.npy
 *.a
 *.o
@@ -8,3 +9,5 @@ LOGS*
 *.smod
 star
 binary
+photos/*
+png/*
