@@ -54,7 +54,7 @@ def plot_HR(logs_dir, profile_number=-1):
     
     plt.legend()
     plt.title('HR Diagram', size=15)
-    plt.show()
+    # plt.show()
 
 def load_profile(logs_dir, profile_number):
     prof = pd.read_table(
