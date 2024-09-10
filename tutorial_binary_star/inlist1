@@ -30,8 +30,8 @@
 
 &controls
 
-      extra_terminal_output_file = 'log13' 
-      log_directory = 'LOGS13'
+      extra_terminal_output_file = 'log15' 
+      log_directory = 'LOGS15'
 
       profile_interval = 50
       history_interval = 1
@@ -47,7 +47,7 @@
 History_Panels1_win_flag = .true.
 History_Panels1_file_flag = .true.
 History_Panels1_win_width = 12
-History_Panels1_win_aspect_ratio = 1.5 ! aspect_ratio = height/width
+History_Panels1_win_aspect_ratio = 1.0 ! aspect_ratio = height/width
 
 History_Panels1_title = 'Orbital evolution'
 History_Panels1_num_panels = 3

@@ -28,8 +28,8 @@
 
 &controls
 
-      extra_terminal_output_file = 'log23' 
-      log_directory = 'LOGS23'
+      extra_terminal_output_file = 'log25' 
+      log_directory = 'LOGS25'
 
       profile_interval = 50
       history_interval = 1
