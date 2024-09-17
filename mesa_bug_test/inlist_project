@@ -19,7 +19,9 @@
    mass_transfer_gamma = 0.0d0
 
    !transfer efficiency controls
-   th
+   limit_retention_by_mdot_edd = .false.
+   use_radiation_corrected_transfer_rate = .false.
+
 
    max_tries_to_achieve = 20
          

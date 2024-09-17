@@ -30,8 +30,8 @@
 
 &controls
 
-      extra_terminal_output_file = 'log1_no_evolve2' 
-      log_directory = 'LOGS1_no_evolve2'
+      extra_terminal_output_file = 'log1_no_evolve2_rad' 
+      log_directory = 'LOGS1_no_evolve2_rad'
 
       profile_interval = 50
       history_interval = 1
