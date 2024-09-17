@@ -37,6 +37,17 @@
       history_interval = 1
       terminal_interval = 1
       write_header_frequency = 10
+      ! see star/defaults/controls.defaults
+
+      ! when to stop
+
+      ! stop when the star nears ZAMS (Lnuc/L > 0.99)
+      Lnuc_div_L_zams_limit = 0.99d0
+      stop_near_zams = .false.
+
+      ! stop when the center mass fraction of h1 drops below this limit
+      xa_central_lower_limit_species(1) = 'he4'
+      xa_central_lower_limit(1) = 1d-3
 
 / ! end of controls namelist
 
@@ -177,7 +188,7 @@
       Grid2_plot_pad_bot(4) = 0.07 ! fraction of full window height for padding at bottom
       Grid2_txt_scale_factor(4) = 0.65 ! multiply txt_scale for subplot by this
 
-      Grid2_file_flag = .true.
+      Grid2_file_flag = .false.
       Grid2_file_dir = 'png1'
       Grid2_file_prefix = 'grid_'
       Grid2_file_interval = 100 ! 1 ! output when mod(model_number,Grid2_file_interval)==0
