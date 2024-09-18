@@ -78,13 +78,13 @@ def plot_composition(logs_dir, profile_number, xaxis = 'radius'):
     Y_p = 0.2463
 
     prof = profs[profile_number-1]
-    x = 10**prof.logR / np.max(10**prof.logR)
+    x = prof.mass #10**prof.logR / np.max(10**prof.logR)
     plt.plot(x, prof.x_mass_fraction_H, lw=3, label='hydrogen', c='k')
     plt.plot(x, prof.y_mass_fraction_He, lw=3, label='helium', c='b')
     plt.axhline(ZAMS_X, c='k', ls='--', zorder=-99)
     plt.axhline(ZAMS_Y, c='k', ls='--', zorder=-99)
     plt.axhline(Y_p, c='lightgray', ls='--', zorder=-99)
-    plt.xlabel(r'fractional radius $r/R$')
+    plt.xlabel(r'mass coordinate')#plt.xlabel(r'fractional radius $r/R$')
     plt.ylabel(r'mass fraction')
     plt.legend()
     plt.title('Internal Composition', size=15)
