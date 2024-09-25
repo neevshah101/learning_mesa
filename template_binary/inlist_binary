@@ -10,8 +10,8 @@ evolve_both_stars = .false.
 &binary_controls
 
 m1 = 60.0d0  ! donor mass in Msun
-m2 = 50.0d0 ! companion mass in Msun
-initial_period_in_days = 2.0d0
+m2 = 33.0d0 ! companion mass in Msun
+initial_period_in_days = 15.0d0
 
 limit_retention_by_mdot_edd = .false. ! this is for BH secondaries
 mass_transfer_alpha = 0.0d0
