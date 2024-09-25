@@ -89,3 +89,34 @@ def plot_composition(logs_dir, profile_number, xaxis = 'radius'):
     plt.legend()
     plt.title('Internal Composition', size=15)
     # plt.show()
+
+from astropy.constants import G, M_sun
+import astropy.units as u
+
+def calculate_semi_major_axis_and_roche_lobe(m1_mass, mass_ratio, orbital_period_days):
+    # Convert inputs to appropriate units
+    m1 = m1_mass * M_sun  # Mass of the primary star in kg
+    q = mass_ratio  # Mass ratio
+    P = orbital_period_days * u.day  # Convert days to days unit
+    
+    # Calculate the mass of the secondary star
+    m2 = q * m1  # Mass of the secondary star in kg
+    
+    # Total mass
+    M_total = m1 + m2  # Total mass in kg
+    
+    # Calculate the semi-major axis using Kepler's Third Law
+    a_cubed = (G * M_total * P**2) / (4 * np.pi**2)
+    a = a_cubed**(1/3)  # Semi-major axis in meters
+    
+    # Convert semi-major axis to solar radii
+    a_solar_radii = a.to(u.R_sun).value
+
+    q_RL = 1/q
+    
+    # Calculate the Roche lobe radius for the primary star
+    R_L = (0.49 * q_RL**(2/3) / (0.6 * q_RL**(2/3) + np.log(1 + q_RL**(1/3)))) * a  # in meters
+    R_L_solar_radii = R_L.to(u.R_sun).value  # Convert to solar radii
+    
+    return a_solar_radii, R_L_solar_radii
+
