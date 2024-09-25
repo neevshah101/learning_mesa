@@ -1,7 +1,7 @@
 &binary_job
 
-read_extra_binary_job_inlist1 = .true.
-extra_binary_job_inlist1_name = 'inlist_binary'
+read_extra_binary_job_inlist(1) = .true.
+extra_binary_job_inlist_name(1) = 'inlist_binary'
 
 / ! end of star_job namelist
 
@@ -9,8 +9,8 @@ extra_binary_job_inlist1_name = 'inlist_binary'
 
 &binary_controls
 
-read_extra_binary_controls_inlist1 = .true.
-extra_binary_controls_inlist1_name = 'inlist_binary'
+read_extra_binary_controls_inlist(1) = .true.
+extra_binary_controls_inlist_name(1) = 'inlist_binary'
 
 / ! end of controls namelist
 

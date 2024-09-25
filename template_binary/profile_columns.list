@@ -9,7 +9,7 @@ am_log_D_SSI
 am_log_D_ST
 am_log_D_visc
 am_log_nu_ST
-avg_charge_He
+!avg_charge_He
 brunt_A
 brunt_A_div_x2
 brunt_B
@@ -67,8 +67,8 @@ mlt_mixing_type
 mu
 net_energy
 net_nuclear_energy
-neutral_fraction_H
-neutral_fraction_He
+!neutral_fraction_H
+!neutral_fraction_He
 non_nuc_neu
 o16
 omega
@@ -83,7 +83,7 @@ radius
 tau
 temperature
 total_energy
-total_energy_integral
+!total_energy_integral
 v_div_cs
 v_rot
 velocity

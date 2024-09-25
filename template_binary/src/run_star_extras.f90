@@ -619,8 +619,8 @@ contains
           if (.not. have_co_value) then
              if (((s% xa(h1,k) + s% xa(he4,k))  <= XplusY_CO_core_mass_threshold) .and. &
                   ((s% xa(c12,k) + s% xa(o16,k))  >= XplusY_CO_core_mass_threshold)) then
-                call set_core_info(s, k, co_core_k, &
-                     co_core_mass, co_core_radius)
+                !call set_core_info(s, k, co_core_k, &
+                !     co_core_mass, co_core_radius)
                 have_co_value = .true.
              end if
           end if

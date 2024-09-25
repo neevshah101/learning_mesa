@@ -1,10 +1,10 @@
 &star_job
 
-read_extra_star_job_inlist1 = .true.
-extra_star_job_inlist1_name = 'inlist_both'
+read_extra_star_job_inlist(1) = .true.
+extra_star_job_inlist_name(1) = 'inlist_both'
 
-read_extra_star_job_inlist2 = .true.
-extra_star_job_inlist2_name = 'inlist_extra'
+read_extra_star_job_inlist(2) = .true.
+extra_star_job_inlist_name(2) = 'inlist_extra'
 
 save_model_filename = 'MASS1donor_final.mod'
 
@@ -12,42 +12,42 @@ save_model_filename = 'MASS1donor_final.mod'
 / ! end of star_job namelist
 
 &eos
-read_extra_eos_inlist1 = .true.
-extra_eos_inlist1_name = 'inlist_both'
+read_extra_eos_inlist(1) = .true.
+extra_eos_inlist_name(1) = 'inlist_both'
 
-read_extra_eos_inlist2 = .true.
-extra_eos_inlist2_name = 'inlist_extra'
+read_extra_eos_inlist(2) = .true.
+extra_eos_inlist_name(2) = 'inlist_extra'
 
 
 / ! end of eos namelist
 
 
 &kap
-read_extra_kap_inlist1 = .true.
-extra_kap_inlist1_name = 'inlist_both'
+read_extra_kap_inlist(1) = .true.
+extra_kap_inlist_name(1) = 'inlist_both'
 
-read_extra_kap_inlist2 = .true.
-extra_kap_inlist2_name = 'inlist_extra'
+read_extra_kap_inlist(2) = .true.
+extra_kap_inlist_name(2) = 'inlist_extra'
 
 / ! end of kap namelist
 
 
 &controls
 
-read_extra_controls_inlist1 = .true.
-extra_controls_inlist1_name = 'inlist_both'
+read_extra_controls_inlist(1) = .true.
+extra_controls_inlist_name(1) = 'inlist_both'
 
 
-read_extra_controls_inlist2 = .true.
-extra_controls_inlist2_name = 'inlist_extra'
+read_extra_controls_inlist(2) = .true.
+extra_controls_inlist_name(2) = 'inlist_extra'
 
 
 ! set this to .true. to continue post-RLOF with a single star accretor
 ! otherwise see stopping condition in inlist_both or run_star_extras.f
 x_logical_ctrl(1) = .true.
 
-! extra_terminal_output_file = 'log1'
-log_directory = 'LOGS1'
+! extra_terminal_output_file = 'log12'
+log_directory = 'LOGS12'
 
 write_header_frequency = 3
 
@@ -62,8 +62,8 @@ photo_interval = 500
 
 &pgstar
 
-read_extra_pgstar_inlist2 = .true.
-extra_pgstar_inlist2_name = 'inlist_pgstar'
+read_extra_pgstar_inlist(2) = .true.
+extra_pgstar_inlist_name(2) = 'inlist_pgstar'
 
 !filenames to avoid overlap with accretor
 HR_file_prefix = 'hr_donor_'
